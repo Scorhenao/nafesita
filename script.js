@@ -22,7 +22,7 @@ const messages = [
   "No hay nada en ti que no me encante. Eres perfecta para mí en cada forma posible 💓",
   "El destino nos unió de la manera más inesperada, y ahora no imagino mi vida sin ti 🌌",
   "Lo mejor que me pudo haber pasado fue jugar Valorant ese día 🎮. Aunque mi rodilla no estuviera bien, fue la excusa perfecta para encontrarte 💘",
-  "Tu risa es mi sonido favorito, tu voz mi melodía preferida y tus abrazos mi refugio más cálido 🥰",
+  "Tu risa es mi sonido favorito, tu voz mi melodía preferida y tu canto mi refugio más cálido 🥰",
   "Desde que llegaste a mi vida, cada momento es más bonito, más especial, más nuestro ✨",
   "Eres mi casualidad más bonita y mi coincidencia más afortunada 💕",
   "Si tuviera que elegir entre respirar y amarte, usaría mi último aliento para decirte cuánto te amo 💖",
