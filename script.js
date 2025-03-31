@@ -19,6 +19,15 @@ const messages = [
   "Contigo, todo es mejor ❤️‍🔥",
   "Te elijo hoy, mañana y siempre 💍",
   "Me haces la persona más feliz del mundo 😊",
+  "No hay nada en ti que no me encante, eres perfecta para mí en cada forma posible 💓",
+  "El destino nos unió de la manera más inesperada, y ahora no imagino mi vida sin ti 🌌",
+  "Lo mejor que me pudo haber pasado fue jugar Valorant ese día 🎮, aunque mi rodilla no estuviera bien, fue la excusa perfecta para encontrarte 💘",
+  "Tu risa es mi sonido favorito, tu voz mi melodía preferida, y tu voz mi refugio más cálido 🥰",
+  "Desde que llegaste a mi vida, cada momento es más bonito, más especial, más nuestro ✨",
+  "Eres mi casualidad más bonita y mi coincidencia más afortunada 💕",
+  "Si tuviera que elegir entre respirar y amarte, usaría mi último aliento para decirte cuánto te amo 💖",
+  "Cada vez que me miras con esos ojitos llenos de amor, sé que estoy exactamente donde debo estar contigo 💞",
+  "No creo en la suerte, pero si existe, definitivamente la tuve el día que te conocí 🍀",
   "¿Lista para la gran pregunta? 👀",
 ];
 
@@ -179,3 +188,26 @@ document.addEventListener(
   },
   { once: true }
 ); // Solo ejecuta esto una vez
+
+function createFloatingHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("floating-heart");
+
+  // Posición aleatoria en el ancho de la pantalla
+  heart.style.left = Math.random() * window.innerWidth + "px";
+
+  // Tamaño aleatorio para dar variedad
+  let size = Math.random() * 40 + 10; // Entre 10px y 40px
+  heart.style.width = size + "px";
+  heart.style.height = size + "px";
+
+  document.body.appendChild(heart);
+
+  // Elimina el corazón después de que termine la animación
+  setTimeout(() => {
+    heart.remove();
+  }, 5000);
+}
+
+// Genera un nuevo corazón cada 300ms
+setInterval(createFloatingHeart, 300);
