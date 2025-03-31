@@ -5,7 +5,6 @@
 }
 
 body {
-  background-color: #ffcccc;
   font-family: "Arial", sans-serif;
   display: flex;
   justify-content: center;
@@ -13,8 +12,15 @@ body {
   height: 100vh;
   flex-direction: column;
   text-align: center;
+  transition: background-color 0.3s ease;
+  background-color: white; /* Cambia al color que prefieras */
+  color: white;
+  font-size: large;
 }
-
+body.loaded {
+  background-color: #ffcccc;
+  color: white;
+}
 .container {
   animation: fadeIn 3s ease-in;
 }
@@ -151,7 +157,12 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 182, 193, 0.8); /* Fondo rosita semi-transparente */
+  background-color: rgba(
+    255,
+    182,
+    193,
+    0.8
+  ); /* Fondo rosita semi-transparente */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,11 +203,11 @@ button {
 
 @keyframes popUp {
   0% {
-      transform: scale(0.5);
-      opacity: 0;
+    transform: scale(0.5);
+    opacity: 0;
   }
   100% {
-      transform: scale(1);
-      opacity: 1;
+    transform: scale(1);
+    opacity: 1;
   }
 }
